@@ -1,3 +1,8 @@
+/**
+ * Returns a list of students who pass a specific grade.
+ * The list is sorted in ascending order by note.
+ *
+ */
 class Student {
     constructor() {
         this.students = [
@@ -24,6 +29,11 @@ class Student {
         ];
     }
 
+    /**
+     * 
+     * @param {Array} note
+     * @return {Array}
+     */
     forListApprovedStudent(note) {
         let approved = [];
         for (let i = 0; i < this.students.length; i++) {
@@ -45,6 +55,11 @@ class Student {
         return approved;
     }
 
+    /**
+     * 
+     * @param {Array} note
+     * @return {Array}
+     */
     whileListApprovedStudent(note) {
         let approved = [];
         let i = 0;
@@ -68,6 +83,11 @@ class Student {
         return approved;
     }
 
+    /**
+     * 
+     * @param {Array} note
+     * @return {Array}
+     */
     doWhileListApprovedStudent(note) {
         let approved = [];
         let i = 0;
@@ -92,6 +112,11 @@ class Student {
         return approved;
     }
 
+    /**
+     * 
+     * @param {Array} student
+     * @return {String}
+     */
     __capitalize(student) {
         let name = student.name.charAt(0).toUpperCase() +
             student.name.toLowerCase().slice(1);
@@ -105,6 +130,6 @@ class Student {
 }
 
 let student = new Student();
-console.log(student.forListApprovedStudent(2));
+//console.log(student.forListApprovedStudent(2));
 //console.log(student.whileListApprovedStudent(8));
-//console.log(student.doWhileListApprovedStudent(1));
+console.log(student.doWhileListApprovedStudent(1));
