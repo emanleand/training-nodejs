@@ -47,7 +47,7 @@ class Student {
                 approved.push(this.students[i]);
             }
         }
-        //returned list of students ordered in ascending order
+        /* Returned list of students ordered in ascending order */
         approved.sort(function (a, b) {
             return a.score - b.score;
         });
@@ -75,7 +75,7 @@ class Student {
             }
             i++;
         }
-        //returned list of students ordered in ascending order
+        /* Returned list of students ordered in ascending order */
         approved.sort(function (a, b) {
             return a.score - b.score;
         });
@@ -104,7 +104,7 @@ class Student {
             i++;
         } while (i < this.students.length);
 
-        //returned list of students ordered in ascending order
+        /* Returned list of students ordered in ascending order */
         approved.sort(function (a, b) {
             return a.score - b.score;
         });
@@ -130,6 +130,7 @@ class Student {
 }
 
 let student = new Student();
-//console.log(student.forListApprovedStudent(2));
-//console.log(student.whileListApprovedStudent(8));
+
+console.log(student.forListApprovedStudent(2));
+console.log(student.whileListApprovedStudent(8));
 console.log(student.doWhileListApprovedStudent(1));
